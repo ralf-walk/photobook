@@ -1,0 +1,105 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with field='m' type='com.aidado.homepage.client.locale.MessageBundle' />
+	<ui:with field='icons' type='com.aidado.homepage.client.icon.Icons' />
+	
+	<g:HTMLPanel>
+		<section class="ym-grid linearize-level-2">
+			<article class="ym-g50 ym-gl">
+				<div class="ym-gbox">
+					<h3>
+						<g:Image resource='{icons.featuresImages}' />
+						<ui:text from="{m.featuresImagesHead}" />
+					</h3>
+					<p>
+						<ui:text from="{m.featuresImages}" />
+					</p>
+				</div>
+			</article>
+			<article class="ym-g50 ym-gr">
+				<div class="ym-gbox">
+					<h3>
+						<g:Image resource='{icons.featuresText}' />
+						<ui:text from="{m.featuresTextHead}" />
+					</h3>
+					<p>
+						<ui:text from="{m.featuresText}" />
+					</p>
+				</div>
+			</article>
+		</section>
+		<section class="ym-grid linearize-level-2">
+			<article class="ym-g50 ym-gl">
+				<div class="ym-gbox">
+					<h3>
+						<g:Image resource='{icons.featuresEffects}' />
+						<ui:text from="{m.featuresEffectsHead}" />
+					</h3>
+					<p>
+						<ui:text from="{m.featuresEffects}" />
+					</p>
+				</div>
+			</article>
+			<article class="ym-g50 ym-gr">
+				<div class="ym-gbox">
+					<h3>
+						<g:Image resource='{icons.featuresPatterns}' />
+						<ui:text from="{m.featuresPatternsHead}" />
+					</h3>
+					<p>
+						<ui:text from="{m.featuresPatterns}" />
+					</p>
+				</div>
+			</article>
+		</section>
+		<section class="ym-grid linearize-level-2">
+			<article class="ym-g50 ym-gl">
+				<div class="ym-gbox">
+					<h3>
+						<g:Image resource='{icons.featuresPassword}' />
+						<ui:text from="{m.featuresPasswordHead}" />
+					</h3>
+					<p>
+						<ui:text from="{m.featuresPassword}" />
+					</p>
+				</div>
+			</article>
+			<article class="ym-g50 ym-gr">
+				<div class="ym-gbox">
+					<h3>
+						<g:Image resource='{icons.featuresSlideshow}' />
+						<ui:text from="{m.featuresSlideshowHead}" />
+					</h3>
+					<p>
+						<ui:text from="{m.featuresSlideshow}" />
+					</p>
+				</div>
+			</article>
+		</section>
+		<section class="ym-grid linearize-level-2">
+			<article class="ym-g50 ym-gl">
+				<div class="ym-gbox">
+					<h3>
+						<g:Image resource='{icons.featuresDatastore}' />
+						<ui:text from="{m.featuresDatastoreHead}" />
+					</h3>
+					<p>
+						<ui:text from="{m.featuresDatastore}" />
+					</p>
+				</div>
+			</article>
+			<article class="ym-g50 ym-gr">
+				<div class="ym-gbox">
+					<h3>
+						<g:Image resource='{icons.featuresFree}' />
+						<ui:text from="{m.featuresFreeHead}" />
+					</h3>
+					<p>
+						<ui:text from="{m.featuresFree}" />
+					</p>
+				</div>
+			</article>
+		</section>
+	</g:HTMLPanel>
+</ui:UiBinder> 

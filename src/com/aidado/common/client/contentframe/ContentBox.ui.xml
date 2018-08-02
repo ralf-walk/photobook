@@ -1,0 +1,51 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:a="urn:import:com.aidado.common.client.widget">
+
+	<ui:style>
+		.ym-column {
+			display: block;
+			overflow: hidden;
+			padding-right: 340px;
+			margin-top: 10px;
+			width: auto;
+		}
+		
+		.ym-col1 { /* content */
+			float: left;
+			width: 100%;
+		}
+		
+		.ym-col3 { /* sidebar */
+			position: relative;
+			float: left;
+			width: 340px;
+			margin-left: 0;
+			margin-right: -340px;
+		}
+		
+		.ym-col1 .ym-cbox {
+			padding: 0 0.75em 0 1.5em;
+		}
+		
+		.ym-col3 .ym-cbox {
+			padding: 0 20px 0 12px;
+		}
+	</ui:style>
+
+	<g:HTMLPanel>
+		<div class="{style.ym-column}">
+			<div class="{style.ym-col1}">
+				<div class="{style.ym-cbox}">
+					<g:Widget ui:field="content" />
+				</div>
+			</div>
+			<aside class="{style.ym-col3}">
+				<div class="{style.ym-cbox}">
+					<g:Widget ui:field="asideContent" />
+					<!--<h2>Advertisement</h2>-->
+				</div>
+			</aside>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="photobook:GWT">
+    <output-path>$PROJECT_DIR$/out/artifacts/photobook_GWT</output-path>
+    <root id="root">
+      <element id="gwt-compiler-output" facet="photobook/gwt/GWT" />
+      <element id="module-output" name="photobook" />
+    </root>
+  </artifact>
+</component>

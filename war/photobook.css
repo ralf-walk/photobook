@@ -1,0 +1,130 @@
+@import url(yaml-base.css);
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: Arial Unicode MS, Arial, sans-serif;
+    font-size: 87.50%; /* base: 14px */
+    color: #444;
+    -webkit-text-size-adjust: 100%;
+}
+
+div,h1,input {
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;;
+    box-sizing: border-box;
+}
+
+/* Lists */
+ul,ol,dl {
+    margin: 10px;
+}
+
+li {
+    margin-left: 10px;
+}
+
+/* Text */
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 1.5em 0 0 0;
+}
+
+/* Anchor */
+a {
+    color: #4D87C7;
+    background: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5F98B8;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #161e21;
+    margin: 0;
+}
+
+h1 {
+    font-size: 350%;
+    line-height: 0.8571em;
+    margin: 0.4286em 0 0;
+}
+
+h2 {
+    font-size: 250%;
+    line-height: 1.2em;
+    margin: 0.6em 0 0 0;
+}
+
+h3 {
+    font-size: 175%;
+    line-height: 0.8571em;
+    margin: 0.8571em 0 0 0;
+}
+
+h4 {
+    font-size: 133.33%;
+    line-height: 1.125em;
+    margin: 1.125em 0 0 0;
+}
+
+h5 {
+    font-size: 116.67%;
+    line-height: 1.2857em;
+    margin: 1.2857em 0 0 0;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 100%;
+    line-height: 1.5em;
+    margin: 1.5em 0 0 0;
+}
+
+/* Info Boxes */
+.box {
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #888;
+    border-color: rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    color: #444;
+    color: rgba(0, 0, 0, .8);
+    padding: 5px;
+    background: #f4f4f4;
+    line-height: 1.2;
+}
+
+.success {
+    background: #fff388;
+}
+
+.warning {
+    background: #cc8;
+}
+
+.error {
+    background: #ffa599;
+}
+
+/* GWT-Styles */
+.gwt-PopupPanelGlass {
+    background-color: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}

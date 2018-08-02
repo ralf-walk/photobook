@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='editor'>
+	<inherits name='com.google.gwt.user.theme.standard.StandardResources' />
+	<inherits name="com.aidado.commoneditorviewer.CommonEditorViewer" />
+	<entry-point class='com.aidado.editor.client.EditorEntryPoint' />
+	<source path='client' />
+</module>

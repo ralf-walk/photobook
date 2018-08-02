@@ -1,0 +1,152 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:a="urn:import:com.aidado.common.client.widget">
+
+	<ui:with field='m' type='com.aidado.common.client.locale.MessageBundle' />
+	<ui:with field='icon' type='com.aidado.common.client.icon.Icons' />
+
+	<ui:style>
+		@external active;
+		.root {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.wrapper {
+			margin: 0 auto;
+			padding: 0;
+			overflow: visible;
+			width: 1000px;
+		}
+		
+		.wbox {
+			padding-top: 10px;
+		}
+		
+		.header {
+			background: #C3D9FF;
+			color: #ccc;
+			height: 105px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+		
+		.nav {
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			line-height: 1em;
+			background: #222;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		
+		.nav ul {
+			margin: 0;
+			padding: 0.5em 1.5em;
+			display: inline;
+			float: left;
+		}
+		
+		.nav ul li {
+			display: inline;
+			float: left; /* LTR */
+			font-size: 1.0em;
+			list-style-type: none;
+			margin: 0 .25em 0 0;
+			padding: 0;
+		}
+		
+		.nav ul li a {
+			background: transparent;
+			color: #aaa;
+			display: block;
+			font-size: 1em;
+			line-height: 2em;
+			padding: 0 0.5em;
+			font-weight: normal;
+			text-decoration: none;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+			width: auto;
+		}
+		
+		.nav ul li a:focus,.nav ul li a:hover,.nav ul li a:active,.nav ul li a.active
+			{
+			background: #666;
+			background: rgba(255, 255, 255, .25);
+			-webkit-border-radius: 0.2em;
+			-moz-border-radius: 0.2em;
+			border-radius: 0.2em;
+			text-decoration: none;
+			outline: 0 none;
+		}
+		
+		.nav ul li a.active {
+			color: #ccc;
+		}
+		
+		.footer {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			background-color: #C3D9FF;
+		}
+		
+		.footer nav {
+			padding: 18px;
+		}
+	</ui:style>
+
+	<g:HTMLPanel>
+		<g:AbsolutePanel ui:field="root" styleName="{style.root}">
+			<g:HTMLPanel>
+				<div class="{style.wrapper}">
+					<div class="{style.wbox}">
+						<g:FlowPanel>
+							<g:HTMLPanel>
+								<header ui:field="header" class="{style.header}">
+								</header>
+								<nav class="{style.nav}">
+									<ul>
+										<li>
+											<a:ContextAwareAnchor ui:field="startAnchor" />
+										</li>
+										<li>
+											<a:ContextAwareAnchor ui:field="featuresAnchor" />
+										</li>
+										<!--<li>
+											<a:ContextAwareAnchor ui:field="editorAnchor" />
+										</li>-->
+									</ul>
+									<ul style="float:right;">
+										<li>
+											<a:ContextAwareAnchor ui:field="logoutAnchor" />
+										</li>
+									</ul>
+								</nav>
+							</g:HTMLPanel>
+							<g:HTMLPanel>
+								<div id="main">
+									<g:Widget ui:field="content" />
+								</div>
+							</g:HTMLPanel>
+							<g:HTMLPanel>
+								<footer ui:field="footer" class="{style.footer}">
+									<nav>
+										© Aidado 2012
+										<!--<span style="margin-left:20px">
+											<a:ContextAwareAnchor ui:field="impressAnchor" />
+											&ndash;
+											<a:ContextAwareAnchor ui:field="termsAnchor" />
+										</span>-->
+									</nav>
+								</footer>
+							</g:HTMLPanel>
+						</g:FlowPanel>
+					</div>
+				</div>
+			</g:HTMLPanel>
+		</g:AbsolutePanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

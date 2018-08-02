@@ -1,0 +1,62 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:a="urn:import:com.aidado.common.client.widget">
+	<ui:with field='m'
+		type='com.aidado.homepage.client.locale.MessageBundle' />
+	<ui:with field='icons' type='com.aidado.homepage.client.icon.Icons' />
+
+	<g:HTMLPanel>
+		<section class="box">
+			<section class="box error" style="margin:10px;text-align:center;">
+				<ui:safehtml from="{m.startDemo}" />
+			</section>
+			<section class="box success" style="margin:10px;text-align:center;">
+				<ui:safehtml from="{m.startTextIntro}" />
+			</section>
+			<section class="ym-grid linearize-level-2">
+				<article class="ym-g50 ym-gl">
+					<div class="ym-gbox" style="text-align:center;">
+						<g:Image resource='{icons.comic1}' />
+						<div style="padding:2px;">
+							<b>
+								<ui:text from="{m.startComic1}" />
+							</b>
+						</div>
+					</div>
+				</article>
+				<article class="ym-g50 ym-gr">
+					<div class="ym-gbox" style="text-align:center;">
+						<g:Image resource='{icons.comic2}' />
+						<div style="padding:2px;">
+							<b>
+								<ui:text from="{m.startComic2}" />
+							</b>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section class="ym-grid linearize-level-2">
+				<article class="ym-g50 ym-gl">
+					<div class="ym-gbox" style="text-align:center;">
+						<g:Image resource='{icons.comic3}' />
+						<div style="padding:2px;">
+							<b>
+								<ui:text from="{m.startComic3}" />
+							</b>
+						</div>
+					</div>
+				</article>
+				<article class="ym-g50 ym-gr">
+					<div class="ym-gbox" style="text-align:center;">
+						<g:Image resource='{icons.comic4}' />
+						<div style="padding:2px;">
+							<b>
+								<ui:text from="{m.startComic4}" />
+							</b>
+						</div>
+					</div>
+				</article>
+			</section>
+		</section>
+	</g:HTMLPanel>
+</ui:UiBinder> 
